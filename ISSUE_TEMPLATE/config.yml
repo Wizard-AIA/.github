@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask a question
+    url: https://github.com/Wizard-AIA/Wizard-w2/discussions
+    about: Please ask questions in the core repo's Discussions.
+  - name: 🔐 Report a security vulnerability
+    url: https://github.com/Wizard-AIA/Wizard-w2/security/policy
+    about: Please do not file public issues for security vulnerabilities.
