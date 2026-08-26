@@ -1,18 +1,45 @@
 name: Feature request
-description: Suggest an idea
+description: Propose an analytical capability, engine improvement, or new feature
 labels: [enhancement]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an enhancement for Wizard! Please describe your use case clearly.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Target Component
+      options:
+        - Analysis Engine & Agent Loop (Manager / Worker)
+        - Data Ingestion & Connectors (CSV, Parquet, SQL, S3, etc.)
+        - Execution Sandbox & Sandboxing (Host / Docker)
+        - Skills & Knowledge Retrieval (RAG / SKILL.md)
+        - Next.js Web UI & Visualizations (Charts / Tables / Layout)
+        - Go CLI Daemon (wizard supervisor)
+        - Other
+    validations:
+      required: true
+
   - type: textarea
     id: problem
     attributes:
-      label: What are you trying to do that this doesn't support today?
+      label: Problem Statement / Use Case
+      description: What analytical task or scenario are you trying to accomplish that is not supported today?
     validations:
       required: true
+
   - type: textarea
     id: solution
     attributes:
-      label: Proposed solution
+      label: Proposed Solution / Design
+      description: Describe how you would like this feature to work.
+    validations:
+      required: true
+
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternatives considered
+      label: Alternatives Considered
+      description: Any other libraries, CLI flags, or workarounds you have considered?
