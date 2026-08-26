@@ -1,0 +1,43 @@
+name: Contributor Welcome Bot
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    if: "!github.event.issue.pull_request || github.event_name == 'pull_request_target'"
+    steps:
+      - name: Welcome New Contributor
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea  # v7.0.1
+        with:
+          script: |
+            const isPR = !!context.payload.pull_request;
+            const author = isPR ? context.payload.pull_request.user.login : context.payload.issue.user.login;
+            const repo = context.repo.repo;
+            const owner = context.repo.owner;
+
+            // Check if author is a maintainer/bot
+            if (author.includes('[bot]') || author === owner) {
+              return;
+            }
+
+            const welcomeBody = isPR
+              ? `👋 Hi @${author}! Thank you for opening this pull request and contributing to **Wizard**! 🧙‍♂️\n\nOur maintainers will review your changes shortly. In the meantime, please ensure:\n- All tests and linters pass.\n- Your commit follows [Conventional Commits](https://www.conventionalcommits.org/).\n- You have reviewed our [Contributing Guidelines](https://github.com/Wizard-AIA/Wizard-w2/blob/master/CONTRIBUTING.md).`
+              : `👋 Hi @${author}! Thanks for opening an issue on **Wizard**! 🧙‍♂️\n\nIf you are reporting a bug or requesting a feature, please make sure you have filled out all relevant fields. Our community and maintainers will look into this soon!`;
+
+            if (isPR) {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: context.payload.pull_request.number,
+                body: welcomeBody,
+              });
+            }
