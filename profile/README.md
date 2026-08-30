@@ -85,17 +85,6 @@ Open **http://localhost:3000** to begin analyzing your data.
 
 ---
 
-## 🌟 Why Wizard
-
-- **🔒 Local-First & Private:** Your datasets and query results never leave your hardware.
-- **⚡ Real Code Execution:** Answers are generated from actual executed code, not LLM guesswork.
-- **🔄 Autonomous Self-Correction:** Automatic execution retry on Python tracebacks and self-verification of headline analytical claims.
-- **📊 Full Analytical Stack:** Native support for DuckDB OLAP, Polars lazy engine, Pandas, Apache Arrow IPC, Scipy, and Plotly charts.
-- **🛡️ 3-Tier Sandboxing:** Runs securely via CodeGuard AST verification, OS-native subprocess isolation (Landlock/seccomp, sandbox-exec, Job Objects), or Docker containers.
-- **🚀 High-Throughput Streaming:** Real-time Apache Arrow binary streaming for rendering millions of rows with sub-millisecond overhead.
-
----
-
 ## 👥 Contributors
 
 Thank you to everyone building and improving Wizard!
