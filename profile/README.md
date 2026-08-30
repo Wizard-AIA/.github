@@ -16,7 +16,7 @@
   <img src="https://raw.githubusercontent.com/Wizard-AIA/Wizard-w2/master/docs/assets/wizard-ui.png" alt="Wizard Interface Preview" width="100%" />
 </p>
 
-Your data never leaves your machine unless you choose a remote cloud provider. No API key is required — two small [Ollama](https://ollama.com/) or [LM Studio](https://lmstudio.ai/) models running locally are all it takes.
+Your data never leaves your machine unless you choose a remote cloud provider. Powered by a modular **Tri-Model Architecture** (Manager, Worker, and Embeddings). No API key is required — local [Ollama](https://ollama.com/) or [LM Studio](https://lmstudio.ai/) models running locally are all it takes.
 
 **[📖 Documentation](https://wizardw2.vercel.app/docs)** · **[🚀 Quickstart](https://wizardw2.vercel.app/docs/getting-started/installation)** · **[🌐 Live Website](https://wizardw2.vercel.app/)** · **[💬 Discussions](https://github.com/Wizard-AIA/Wizard-w2/discussions)** · **[📦 Latest Release (v1.0.5)](https://github.com/Wizard-AIA/Wizard-w2/releases/latest)**
 
