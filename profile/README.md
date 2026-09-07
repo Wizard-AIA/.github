@@ -18,7 +18,7 @@
 
 Your data never leaves your machine unless you choose a remote cloud provider. Powered by a modular **Tri-Model Architecture** (Manager, Worker, and Embeddings). No API key is required — local [Ollama](https://ollama.com/) or [LM Studio](https://lmstudio.ai/) models running locally are all it takes.
 
-**[📖 Documentation](https://wizardw2.vercel.app/docs)** · **[🚀 Quickstart](https://wizardw2.vercel.app/docs/getting-started/installation)** · **[🌐 Live Website](https://wizardw2.vercel.app/)** · **[💬 Discussions](https://github.com/Wizard-AIA/Wizard-w2/discussions)** · **[📦 Latest Release (v1.0.5)](https://github.com/Wizard-AIA/Wizard-w2/releases/latest)**
+**[📖 Documentation](https://wizardw2.vercel.app/docs)** · **[🚀 Quickstart](https://wizardw2.vercel.app/docs/getting-started/installation)** · **[🌐 Live Website](https://wizardw2.vercel.app/)** · **[💬 Discussions](https://github.com/Wizard-AIA/Wizard-w2/discussions)** · **[📦 Latest Release (v1.0.10)](https://github.com/Wizard-AIA/Wizard-w2/releases/latest)**
 
 ---
 
@@ -52,15 +52,15 @@ cd Wizard-w2
 docker compose up -d
 ```
 
-### 📦 Option E: Standalone Prebuilt Packages (v1.0.5)
+### 📦 Option E: Standalone Prebuilt Packages (v1.0.10)
 
 | Operating System | Architecture | Download Package |
 | :--- | :--- | :--- |
-| **macOS** | Apple Silicon (M1 / M2 / M3 / M4) | [**`Wizard-v1.0.5-darwin-arm64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.5/Wizard-v1.0.5-darwin-arm64.zip) |
-| **macOS** | Intel x86_64 | [**`Wizard-v1.0.5-darwin-amd64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.5/Wizard-v1.0.5-darwin-amd64.zip) |
-| **Linux** | x86_64 / amd64 | [**`Wizard-v1.0.5-linux-amd64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.5/Wizard-v1.0.5-linux-amd64.zip) |
-| **Linux** | ARM64 / aarch64 | [**`Wizard-v1.0.5-linux-arm64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.5/Wizard-v1.0.5-linux-arm64.zip) |
-| **Windows** | x86_64 | [**`Wizard-v1.0.5-windows-amd64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.5/Wizard-v1.0.5-windows-amd64.zip) |
+| **macOS** | Apple Silicon (M1 / M2 / M3 / M4) | [**`Wizard-v1.0.10-darwin-arm64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.10/Wizard-v1.0.10-darwin-arm64.zip) |
+| **macOS** | Intel x86_64 | [**`Wizard-v1.0.10-darwin-amd64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.10/Wizard-v1.0.10-darwin-amd64.zip) |
+| **Linux** | x86_64 / amd64 | [**`Wizard-v1.0.10-linux-amd64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.10/Wizard-v1.0.10-linux-amd64.zip) |
+| **Linux** | ARM64 / aarch64 | [**`Wizard-v1.0.10-linux-arm64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.10/Wizard-v1.0.10-linux-arm64.zip) |
+| **Windows** | x86_64 | [**`Wizard-v1.0.10-windows-amd64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.10/Wizard-v1.0.10-windows-amd64.zip) |
 
 ```bash
 # After extracting your zip:
