@@ -18,7 +18,7 @@
 
 Your data never leaves your machine unless you choose a remote cloud provider. Powered by a modular **Tri-Model Architecture** (Manager, Worker, and Embeddings). No API key is required — local [Ollama](https://ollama.com/) or [LM Studio](https://lmstudio.ai/) models running locally are all it takes.
 
-**[📖 Documentation](https://wizardw2.vercel.app/docs)** · **[🚀 Quickstart](https://wizardw2.vercel.app/docs/getting-started/installation)** · **[🌐 Live Website](https://wizardw2.vercel.app/)** · **[💬 Discussions](https://github.com/Wizard-AIA/Wizard-w2/discussions)** · **[📦 Latest Release (v1.0.10)](https://github.com/Wizard-AIA/Wizard-w2/releases/latest)**
+**[📖 Documentation](https://wizardw2.vercel.app/docs)** · **[🚀 Quickstart](https://wizardw2.vercel.app/docs/getting-started/installation)** · **[🌐 Live Website](https://wizardw2.vercel.app/)** · **[💬 Discussions](https://github.com/Wizard-AIA/Wizard-w2/discussions)** · **[📦 Latest Release](https://github.com/Wizard-AIA/Wizard-w2/releases/latest)**
 
 ---
 
@@ -26,20 +26,28 @@ Your data never leaves your machine unless you choose a remote cloud provider. P
 
 ### 🍺 Option A: Homebrew (macOS & Linux)
 ```bash
-brew tap Wizard-AIA/wizard && brew install wizard
-wizard init && wizard start
+brew install Wizard-AIA/wizard/wizard
 ```
 
-### 🚀 Option B: 1-Command Automated Installers
+### 🚀 Option B: 1-Command Installers
 
 **Linux & macOS:**
 ```bash
-curl -fsSL https://wizardw2.vercel.app/install.sh | bash
+curl -fsSL https://wizardw2.vercel.app/install.sh | sh
 ```
 
-**Windows (PowerShell):**
+**Windows (PowerShell 5.1 or 7):**
 ```powershell
 irm https://wizardw2.vercel.app/install.ps1 | iex
+```
+
+Then, from any directory:
+
+```bash
+wizard --version  # confirm the install
+wizard init       # choose a provider and models, install what is missing
+wizard start      # launches Wizard and opens http://localhost:3000
+wizard doctor     # if anything looks wrong: checks the install and says how to fix it
 ```
 
 ### ☁️ Option C: 1-Click Cloud Trial (GitHub Codespaces)
@@ -52,23 +60,11 @@ cd Wizard-w2
 docker compose up -d
 ```
 
-### 📦 Option E: Standalone Prebuilt Packages (v1.0.10)
+### 📦 Option E: Standalone Prebuilt Packages
 
-| Operating System | Architecture | Download Package |
-| :--- | :--- | :--- |
-| **macOS** | Apple Silicon (M1 / M2 / M3 / M4) | [**`Wizard-v1.0.10-darwin-arm64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.10/Wizard-v1.0.10-darwin-arm64.zip) |
-| **macOS** | Intel x86_64 | [**`Wizard-v1.0.10-darwin-amd64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.10/Wizard-v1.0.10-darwin-amd64.zip) |
-| **Linux** | x86_64 / amd64 | [**`Wizard-v1.0.10-linux-amd64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.10/Wizard-v1.0.10-linux-amd64.zip) |
-| **Linux** | ARM64 / aarch64 | [**`Wizard-v1.0.10-linux-arm64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.10/Wizard-v1.0.10-linux-arm64.zip) |
-| **Windows** | x86_64 | [**`Wizard-v1.0.10-windows-amd64.zip`**](https://github.com/Wizard-AIA/Wizard-w2/releases/download/v1.0.10/Wizard-v1.0.10-windows-amd64.zip) |
+Prebuilt archives for macOS (Apple Silicon and Intel), Linux (x86-64 and ARM64) and Windows (x86-64), with a `SHA256SUMS` file, are on the **[latest release page](https://github.com/Wizard-AIA/Wizard-w2/releases/latest)**. Check the archive against `SHA256SUMS`, extract it, then from the extracted `Wizard-v<version>-<platform>` folder run `./cli/wizard init` and `./cli/wizard start`.
 
-```bash
-# After extracting your zip:
-./cli/wizard init       # Checks prerequisites & installs environment
-./cli/wizard start      # Starts backend + frontend daemon and opens your browser
-```
-
-Open **http://localhost:3000** to begin analyzing your data.
+Open **http://localhost:3000** to begin analyzing your data. Nothing above needs administrator rights.
 
 ---
 
